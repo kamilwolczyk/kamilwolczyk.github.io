@@ -21,7 +21,6 @@ body {
 }
 
 .block {
-    display:none;
     position: absolute;
     height: 200px;
     left: 35%;
@@ -52,7 +51,6 @@ svg {
 }
 
 .mail-popup {
-    display: none;
     position: absolute;
     left: 35%;
     margin-left: -50px;
