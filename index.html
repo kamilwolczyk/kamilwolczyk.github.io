@@ -1,54 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <title>Full Stack Dev</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>Fullstackdev.pl</title>
+  <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-  <div class="content">
+  <kw-root>
+    <style>
+      html, body, .container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #4A5A61;
+        display: flex;      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-    <div class="mail-popup">
-      <ul>
-        <li>
-          <a href="mailto:kontakt@fullstackdev.pl"><i class="fa fa-envelope-square list-icon" aria-hidden="true"></i> Email</a>
-        </li>
-        <li>
-          <a href="https://pl.linkedin.com/in/kamil-wo%C5%82czyk-0b54168b" target="_blank"><i class="fa fa-linkedin-square list-icon" aria-hidden="true"></i>Linkedin</a>
-        </li>
-      </ul>
+      .spinner {
+        text-align: center;
+      }
+
+      .spinner>div {
+        width: 18px;
+        height: 18px;
+        background-color: white;
+
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      }
+
+      .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+
+      .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+
+      @-webkit-keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0)
+        }
+        40% {
+          -webkit-transform: scale(1.0)
+        }
+      }
+
+      @keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+        }
+      }
+    </style>
+    <div class="container">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
     </div>
-
-    <div class="block">
-      <div class="logo">
-        <svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-          <circle fill="none" stroke="black" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48" />
-          <line fill="none" stroke-linecap="round" stroke="black" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
-            <animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite"
-            />
-          </line>
-          <line fill="none" stroke-linecap="round" stroke="black" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5"
-            y2="74">
-            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite"
-            />
-          </line>
-        </svg>
-      </div>
-      <h1>Working in progress...</h1>
-    </div>
-
-    <footer>
-      2017 Kamil Wołczyk
-    </footer>
-  </div>
-  <!--<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>-->
-</body>
+    </kw-root>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
 
 </html>
